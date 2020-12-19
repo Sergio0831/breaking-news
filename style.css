@@ -84,6 +84,18 @@ a:hover {
   transition: all 0.3s ease-out;
 }
 
+.menu-btn {
+  cursor: pointer;
+  margin-top: 1.2rem;
+}
+
+.menu-btn__line {
+  width: 2.8rem;
+  height: 0.3rem;
+  background: #000;
+  margin: 0 0 0.5rem;
+}
+
 .card {
   display: grid;
   grid-row-gap: 1rem;
@@ -95,7 +107,7 @@ a:hover {
 }
 
 .card:hover {
-  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
 }
 
 .card__img {
@@ -135,4 +147,15 @@ a:hover {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-column-gap: 1.5rem;
   grid-row-gap: 2rem;
+}
+
+.footer {
+  padding: 2rem 0;
+  background: #fff;
+}
+
+.footer__copy {
+  color: rgb(38, 38, 36);
+  font-size: 1.5rem;
+  text-align: center;
 }

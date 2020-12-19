@@ -2,18 +2,16 @@ const newsContainer = document.querySelector(".general-news__container");
 const cardCategory = document.querySelector(".card__category");
 const apiKey = "Ba3pFdmNAaKUAtxgesKaLYitLEZ3mFcP";
 let limit = 10;
-let url = `https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${apiKey}`;
+let category = ["home", "sports", "world", "travel", "health", "food"];
+let url = `https://api.nytimes.com/svc/topstories/v2/${category[0]}.json?api-key=${apiKey}`;
 
-const getArticles = (data) => {
+const getArticles = () => {
   axios
     .get(url)
     .then((data) => htmlTemplate(data.data.results))
     .catch((err) => console.log(err));
 };
-
 getArticles();
-
-// const image = (image) => image.map((image) => image.url[3]).join("");
 
 const newsTemplate = (article) =>
   `
