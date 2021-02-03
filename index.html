@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="icon.png" />
     <link rel="stylesheet" href="style.css" />
     <title>News</title>
   </head>
@@ -21,6 +22,21 @@
         </div>
       </div>
     </nav>
+    <!-- Menu -->
+    <div class="menu-overlay">
+      <menu class="menu">
+        <div class="menu__close"><img src="close.svg" alt="menu-close" /></div>
+        <ul class="menu__list">
+          <li><a href="#" class="menu__list-link active">Home</a></li>
+          <li><a href="#" class="menu__list-link">World</a></li>
+          <li><a href="#" class="menu__list-link">Politics</a></li>
+          <li><a href="#" class="menu__list-link">Travel</a></li>
+          <li><a href="#" class="menu__list-link">Sport</a></li>
+          <li><a href="#" class="menu__list-link">Health</a></li>
+          <li><a href="#" class="menu__list-link">Food</a></li>
+        </ul>
+      </menu>
+    </div>
     <section class="general-news">
       <div class="container">
         <h2 class="news-title">Top Stories</h2>
@@ -34,5 +50,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="app.js"></script>
+    <!-- <script src="Menu.js"></script> -->
   </body>
 </html>
