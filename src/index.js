@@ -50,7 +50,10 @@ const htmlTemplate = async () => {
 	return newsContainer.insertAdjacentHTML(
 		'afterbegin',
 		`
-  ${data.map((article) => newsTemplate(article)).join('')}
+  ${data
+		.map((article) => newsTemplate(article))
+		.slice(0, 15)
+		.join('')}
  `
 	);
 };
@@ -86,4 +89,3 @@ const getNewsCategory = () => {
 getNewsCategory();
 
 const title = document.querySelector('news-title');
-console.log(title);
